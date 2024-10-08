@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group 'ret.tawny'
+version '1.0'
+
+repositories {
+    mavenCentral()
+    maven {
+        url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
+    }
+}
+
+dependencies {
+    compileOnly ''
+    compileOnly 'me.clip:placeholderapi:2.11.3' // or the latest version of PlaceholderAPI
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'ret.tawny.Main'
+        )
+    }
+
+    from {
+        configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+
+    archiveBaseName.set("csp")
+    archiveVersion.set("1.0")
+}

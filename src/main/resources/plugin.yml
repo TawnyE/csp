@@ -1,0 +1,14 @@
+name: csp
+main: ret.tawny.csp.Main
+version: 1.0
+api-version: 1.16
+softdepend: [PlaceholderAPI]
+
+commands:
+  admintool:
+    description: "Gives the admin tool idk"
+    usage: "/admintool give"
+permissions:
+  abcstats.gui.open:
+    description: "Allows opening the stats GUI"
+    default: op

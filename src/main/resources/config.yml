@@ -1,0 +1,19 @@
+messages:
+  enter_stat_value: "Please enter a value for {stat} (0-255):"
+  invalid_number: "Invalid number! Please enter a value between 0 and 255."
+  invalid_input: "Invalid input! Please enter a number."
+  stat_changed: "{stat} has been changed to {value}."
+  invalid_stat: "Invalid stat type!"
+
+placeholders:
+  health: "%csph%"
+  speed: "%speed%"
+  armor: "%armor%"
+
+
+features:
+  enable_speed_boost: true
+
+stats:
+  max_health: 20
+  speed_multiplier: 1.2
